@@ -1,0 +1,30 @@
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="card ">
+    <!-- <iframe src="https://www.google.com/maps/d/embed?mid=1UXjgw-glcmTcuKVeBILprpxLegy2Rebh" width="1120" height="960"></iframe> -->
+    <div class="card-body ">
+      <div class="row">
+        <div class="col-md-12">
+          
+
+          <h4 align='center'>Mapa das Perdas</h4>
+          <div class="card ">
+            <button (click)="ngOnInit()">Pontos no Mapa</button>
+            <button (click)="cluster()">Pontos Agrupados</button>
+            <button (click)="heatMap()">Mapa de Calor</button>
+
+            <div id="map" class="map"></div>
+            <div id='legend'>
+              <!-- <legend>Legenda :</legend> -->
+              <img name="azul" type="image" src="./assets/img/azul.png" width="25" height="22"> até 10m³
+              <img name="verde" type="image" src="./assets/img/verde.png" width="17" height="15"> até 50m³
+              <img name="amarelo" type="image" src="./assets/img/amarela.png" width="21" height="20"> até 100m³
+              <img name="vermelho" type="image" src="./assets/img/vermelha.png" width="25" height="22"> acima de 100m³
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

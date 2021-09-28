@@ -1,0 +1,43 @@
+ agm-map{
+    height: 300px;
+} 
+body, html {
+    height: 100%;
+    width: 100%;
+}
+.angular-google-map-container {
+    height: 100%;
+    width: 50%;
+    position: absolute;
+}
+
+.middle {
+    display: table;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.container{
+    width: 50%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#legend {
+    background: white;
+    padding: 10px;
+    top: 5px !important;
+}
+  .display-flex {
+    display: flex;
+  }
+  .legend-box {
+    width: 10px;
+    height: 10px;
+    border: 1px solid;
+    margin-top: 2px;
+    margin-right: 5px;
+  }
+

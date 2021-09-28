@@ -1,0 +1,17 @@
+
+ <div class="panel-header panel-header-sm">
+  </div>
+ <div class="main-content">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title" align="center"> Perdas m³ x Perdas R$</h4>
+              <div *ngIf="chart">
+               <canvas id="canvas">{{ chart }}</canvas>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+  </div>  

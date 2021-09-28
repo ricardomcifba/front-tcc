@@ -1,0 +1,75 @@
+<div class="panel-header panel-header-sm">
+</div>
+<div class="main-content">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title" align="center"> Dimensão Organização</h4>
+        </div>
+        <div class="card-body">
+          <div class="table-hover">
+              <style>
+                  table, th , td {
+                     border: 1px solid rgb(49, 114, 122);
+                     border-collapse: unset;
+                     padding: 10px;
+                  }
+         
+                  table tr:nth-child(odd) {
+                     background-color: #d1f8f6;
+                  }
+         
+                  table tr:nth-child(even) {
+                     background-color: #d8f7f0;
+                  }
+               </style>
+            <table mdbTable class="table table-hover table-striped">
+              <thead class=" text-primary">
+                <th>ID Organização</th>
+                <th>Sigla</th>
+                <th>ID Regiao</th>
+                <th>Sigla Regiao</th>
+                <th>ID UR</th>
+                <th>Unidade Regional</th>
+                <th>ID Localidade</th>
+                <th>Localidade</th>
+                <th>Setor</th>
+              </thead>
+              <tbody>
+                <tr class="text-center" *ngFor="let i of pagedItems">
+                  <td>{{i.idOrganizacao}}</td>
+                  <td>{{i.siglaEmpresa}}</td>
+                  <td>{{i.regiao}}</td>
+                  <td>{{i.nomeRegiao}}</td>
+                  <td>{{i.unidade}}</td>
+                  <td>{{i.nomeUnidade}}</td>
+                  <td>{{i.localidade}}</td>
+                  <td>{{i.nomeLocalidade}}</td>
+                  <td>{{i.setor}}</td>
+                </tr>
+              </tbody>
+            </table>
+            <ul *ngIf="pager.pages && pager.pages.length" class="pagination">
+              <li [ngClass]="{disabled:pager.currentPage === 1}">
+                <a (click)="setPage(1)">Primeira</a>
+              </li>
+              <li [ngClass]="{disabled:pager.currentPage === 1}">
+                <a (click)="setPage(pager.currentPage - 1)">Anterior</a>
+              </li>
+              <li *ngFor="let page of pager.pages" [ngClass]="{active:pager.currentPage === page}">
+                <a (click)="setPage(page)">{{page}}</a>
+              </li>
+              <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+                <a (click)="setPage(pager.currentPage + 1)">Próxima</a>
+              </li>
+              <li [ngClass]="{disabled:pager.currentPage === pager.totalPages}">
+                <a (click)="setPage(pager.totalPages)">Última</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

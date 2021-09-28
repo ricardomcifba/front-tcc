@@ -1,0 +1,87 @@
+<div class="panel-header panel-header-sm">
+</div>
+
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="card">
+      <div class="header">
+        <h4 class="title" align="center">Sobre a aplicação</h4>
+      </div>
+      <div class="content">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="alert alert-info">
+              <span>1 - <b>Tabela Fato x Dimensões:</b> Contento uma tabela unindo o fato estudado com as dimensões
+                propostas (Unidade Organizacional, Endereço, Serviço e Tempo).
+                As menores granularidades desta tabela são bairro, logradouro e dia.
+                É possível exportar os dados para um arquivo texto.
+                O cálculo da perda de água leva em consideração a pressão da água de 20 mca.
+                Para o cálculo da perda financeira foi levado em consideração à tabela tarifária de 2017. A tarifa na
+                menor faixa era R$ 27,50, ou seja, R$ 4,58 por metro cúbico de água.
+              </span>
+            </div>
+            <div class="alert alert-info">
+              <span>2 - <b>Registros de Vazamentos:</b> Apresenta uma tabela com os registros que foram utilizados para
+                preencher a tabela fato.
+                Para esta tabela, foi necessário separar cada solicição pelos dias em que a mesma ocorreu, com o intuito de atender a
+                dimensão Tempo, conforme exemplo:<br>
+                Inicio 28/01/2017 12:00 e fim 30/01/2017 as 9:30<br>
+                28/01/2017 | 12:00 horas<br>
+                29/01/2017 | 24:00 horas<br>
+                30/01/2017 | 09:30 horas.
+              </span>
+            </div>
+            <div class="alert alert-info">
+              <span>3 - <b>Dimensão Organização:</b> Exibição da dimensão Unidade Organizacional.</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="alert alert-info">
+              <span>4 - <b>Gráfico de Perdas:</b> Gráfico comparativo das perdas de água e financeira por mês para toda a localidade
+                de Pirajá.</span>
+            </div>
+            <div class="alert alert-info" data-notify="container">
+              <span data-notify="message">5 - <b>Perdas por Setor:</b> Gráfico comparativo das perdas de água e
+                financeira por setor de abastecimento.</span>
+            </div>
+            <div class="alert alert-info" data-notify="container">
+              <span data-notify="message">6 - <b>Perdas por Bairro:</b> Gráfico comparativo das perdas de água e
+                financeira por bairro.</span>
+            </div>
+            <div class="alert alert-info">
+              <span>7 - <b>Mapa de Ocorrências:</b> Representação espacial dos registros da tabela fato. Ele pode ser
+                visto de 3 formas:
+                <br>• pontos no Mapa - com marcação de cada item da tabela fato no mapa. Ao clicar no ponto,
+                ele exibe o total de registros que compõe o fato, a quantidade de água perdida, em metros cúbicos, e a respectiva 
+                perda financeira em reais;
+                <br>• Pontos Agrupados - apresenta um agrupamento de registros por proximidade. Ao clicar em um
+                agrupamento, ele dá um zoom na região onde os pontos estão agrupados;
+                <br>• Mapa de Calor - apresenta, através de mapa de calor, os locais com maior incidência de perdas.
+              </span>
+            </div>
+
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="places-buttons">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center">
+              <h5>Observação</h5>
+            </div>
+            <div class="col-md-12">
+              <div class="alert alert-warning">
+                <span>Como a tabela fato possui 5736 registros, deixando o processamento do mapa lento, para
+                  exemplificação da visualização, foi utilizado um limite de 1500 registros.
+                  Alguns registros não possuem dados de latitude e longitude, podendo exibir menos pontos que os
+                  solicitados, na visualização.
+                </span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
